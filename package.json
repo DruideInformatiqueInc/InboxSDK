@@ -112,7 +112,8 @@
     "prettier:fix": "prettier --write .",
     "puppeteer": "jest -c test/chrome/jest.config.js --runInBand",
     "start": "gulp default -w --reloader",
-    "test": "jest"
+    "test": "jest",
+    "build": "gulp clean && gulp --production --noExamples"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
